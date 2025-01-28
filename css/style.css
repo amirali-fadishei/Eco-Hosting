@@ -1,8 +1,10 @@
 @font-face {
     font-family: "IRANSansWeb";
-    src: url("../fonts/IRANSansWeb\(FaNum\)_Medium.eot") format("eot"), url("../fonts/IRANSansWeb\(FaNum\)_Medium.ttf") format("truetype"), url("../fonts/IRANSansWeb\(FaNum\)_Medium.woff") format("woff"), url("../fonts/IRANSansWeb\(FaNum\)_Medium.woff2") format("woff2");
+    src: url("../fonts/IRANSansWeb(FaNum)_Medium.eot") format("eot"), 
+         url("../fonts/IRANSansWeb(FaNum)_Medium.ttf") format("truetype"), 
+         url("../fonts/IRANSansWeb(FaNum)_Medium.woff") format("woff"), 
+         url("../fonts/IRANSansWeb(FaNum)_Medium.woff2") format("woff2");
 }
-
 
 /*frequent and default styles*/
 
@@ -17,30 +19,16 @@ body {
     box-sizing: border-box;
 }
 
-.main-color {
-    color: rgb(33, 33, 180);
+.main-color, .btn-grad:hover {
+    color: #fff;
 }
 
-.main-bg-color {
+.main-bg-color, .btn-grad {
     background-color: rgb(33, 33, 180);
 }
 
-
-/*header*/
-
-header {
-    background: rgb(2, 0, 36);
-    background: linear-gradient( 120deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 25%, rgba(0, 212, 255, 1) 100%);
-    padding: 30px 0 0 0;
-}
-
-.navbar-toggler {
-    border: none;
-    outline: none;
-}
-
 .btn-grad {
-    background-image: linear-gradient( to right, #1fa2ff 0%, #12d8fa 51%, #1fa2ff 100%);
+    background-image: linear-gradient(to right, #1fa2ff 0%, #12d8fa 51%, #1fa2ff 100%);
     transition: 0.5s;
     background-size: 200% auto;
     box-shadow: 0 0 8px #eee;
@@ -49,19 +37,18 @@ header {
 
 .btn-grad:hover {
     background-position: right center;
-    color: #fff;
     text-decoration: none;
 }
 
 .nav-link::before {
     content: "";
-    width: 0px;
+    width: 0;
     height: 2px;
-    background: rgb(255, 255, 255);
+    background: #fff;
     position: absolute !important;
     bottom: 0;
     right: 0;
-    transition: all 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
 }
 
 .nav-link:hover::before {
@@ -81,15 +68,13 @@ header {
     color: #0d6efd !important;
 }
 
-
 /* search */
 
 .search {
     padding: 100px 0;
 }
 
-.fa-globe,
-.fa-search {
+.fa-globe, .fa-search {
     top: 20% !important;
 }
 
@@ -102,7 +87,6 @@ header {
     cursor: pointer;
 }
 
-
 /*services*/
 
 .services {
@@ -114,7 +98,6 @@ header {
     width: 150px;
     height: 150px;
 }
-
 
 /*plans*/
 
@@ -151,18 +134,14 @@ header {
 }
 
 .plan-main {
-    -webkit-box-shadow: -5px 5px 34px -3px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: -5px 5px 34px -3px rgba(0, 0, 0, 0.75);
     box-shadow: -5px 5px 34px -3px rgba(0, 0, 0, 0.75);
 }
-
 
 /*info*/
 
 .info {
     padding: 100px 0;
 }
-
 
 /* questions */
 
@@ -175,8 +154,7 @@ header {
     transition: 0.4s;
 }
 
-.accordian-active,
-.accordion:hover {
+.accordian-active, .accordion:hover {
     background-color: rgb(6, 50, 92);
 }
 
@@ -195,7 +173,6 @@ header {
     max-height: 0;
     transition: max-height 0.2s ease-out;
 }
-
 
 /* footer */
 
@@ -232,7 +209,6 @@ footer {
     color: #040c38 !important;
 }
 
-
 /* mobile-menu */
 
 .mobile-menu {
@@ -243,7 +219,8 @@ footer {
     transition: all 0.5s ease-in-out !important;
     height: 100vh;
 }
-.mobile-menu button{
+
+.mobile-menu button {
     width: 120px;
     height: 40px;
 }
@@ -258,11 +235,13 @@ footer {
         width: 75%;
     }
 }
+
 @media only screen and (max-width: 992px) {
     .footer-up {
         padding-top: 100px;
     }
 }
+
 @media only screen and (min-width: 992px) {
     .input-container {
         width: 50% !important;
