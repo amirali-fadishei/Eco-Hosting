@@ -1,142 +1,7 @@
-/******** css-reset *******/
+@import url(reset.css);
+@import url(responsive.css);
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/******** initial codes *******/
+/******** base codes *******/
 
 @font-face {
   font-family: "IRANSansWeb";
@@ -159,7 +24,7 @@ body {
 
 .main-color,
 .btn-grad:hover {
-  color: #fff;
+  color: #00BFFF;
 }
 
 .main-bg-color,
@@ -168,67 +33,88 @@ body {
 }
 
 .btn-grad {
-  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
-  transition: 0.5s;
-  background-size: 200% auto;
+  background: #1E90FF;
+  transition: all 0.5s ease-in-out;
   box-shadow: 0 0 8px #eee;
   text-align: center;
 }
 
 .btn-grad:hover {
-  background-position: right center;
-  text-decoration: none;
+  background: #00BFFF;
+}
+
+.gradient-background {
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+  background-size: 120% 120%;
+  animation: gradient-animation 12s ease infinite;
+}
+
+.main-title {
+  text-shadow: 2px 2px 10px rgba(0, 120, 255, 0.6),
+    -2px -2px 10px rgba(0, 180, 255, 0.4);
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/*****header*****/
+
+.nav-link {
+  text-shadow: 3px 2px 3px rgba(255, 255, 255, .2);
+  cursor: pointer;
 }
 
 .nav-link::before {
   content: "";
-  width: 0;
+  transform: scaleX(0);
+  transform-origin: center;
   height: 2px;
   background: #fff;
   position: absolute !important;
   bottom: 0;
   right: 0;
-  transition: width 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
 }
 
 .nav-link:hover::before {
-  width: 100% !important;
-  cursor: pointer;
+  transform: scaleX(1);
 }
 
-.totop-container {
-  bottom: 1%;
-  right: 1%;
-  z-index: 100;
-  border: 3px solid #0d6efd;
-  transition: all 0.3s ease-in-out;
+.banner__nav-buttons button i:hover {
+  transform: scale(1.2);
+  transition: all 0.4s ease-in-out;
 }
 
-.totop-container i {
-  color: #0d6efd !important;
-}
-
-/* search */
+/*****search*****/
 
 .search {
   padding: 100px 0;
 }
 
-.fa-globe,
-.fa-search {
-  top: 20% !important;
-}
-
 .fa-globe {
-  right: 10px;
+  right: 15px;
+  top: 20px;
 }
 
-.fa-search {
-  left: 10px;
+.fa-magnifying-glass {
+  left: 15px;
+  bottom: 20px;
   cursor: pointer;
 }
 
-/*services*/
+/*****services*****/
 
 .services {
   padding: 100px 0;
@@ -240,7 +126,7 @@ body {
   height: 150px;
 }
 
-/*plans*/
+/*****plans*****/
 
 .plans {
   padding: 100px 0;
@@ -271,56 +157,40 @@ body {
 }
 
 .plan-type {
-  border-top-left-radius: 3.25rem !important;
-  border-top-right-radius: 3.25rem !important;
+  top: 0;
+  right: 0;
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .plan-main {
   box-shadow: -5px 5px 34px -3px rgba(0, 0, 0, 0.75);
 }
 
-/*info*/
+/*****info*****/
 
 .info {
   padding: 100px 0;
 }
 
-/* questions */
+/*****questions*****/
 
 .main-question {
   padding: 100px 0;
 }
 
-.accordion {
+.accordion-button {
   background-color: rgb(21, 165, 231);
-  transition: 0.4s;
 }
 
-.accordian-active,
-.accordion:hover {
-  background-color: rgb(6, 50, 92);
+.accordion-button::after {
+  left: 3%;
+  position: absolute;
 }
 
-.accordion:after {
-  content: "\002B";
-  color: #fff;
-  font-weight: bold;
-  float: left;
-}
-
-.accordian-active:after {
-  content: "\2212";
-}
-
-.panel {
-  max-height: 0;
-  transition: max-height 0.2s ease-out;
-}
-
-/* footer */
+/*****footer*****/
 
 footer {
-  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
   padding: 60px 30px;
   position: relative;
 }
@@ -352,28 +222,23 @@ footer:before {
   cursor: pointer;
 }
 
-/***** responsive *****/
 
+/*****mobile-menu*****/
 .mobile-menu {
-  top: 0;
-  right: -100%;
-  background: #11293b;
+  height: 80px;
+  box-shadow: inset -3px 8px 13px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 30px 30px 0 0;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
   z-index: 1000;
-  transition: all 0.5s ease-in-out !important;
-  height: 100vh;
 }
 
-.mobile-menu button {
-  width: 120px;
-  height: 40px;
+.mobile-menu li a i {
+  color: #258eff;
 }
 
-@media only screen and (min-width: 768px) {
-  .intro {
-    padding: 100px 0 150px 0 !important;
-  }
-
-  .input-group {
-    width: 75%;
-  }
+.mobile-menu li a i:hover {
+  transform: scale(1.2);
+  color: #090088;
 }

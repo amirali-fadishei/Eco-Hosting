@@ -12,137 +12,77 @@
 </head>
 
 <body>
-  <header id="header">
+  <header id="header" class="gradient-background vh-100 position-relative">
     <div class="container">
       <section class="banner">
         <img src="img/png/top-left-shape.png" alt="top-left-img"
           class="banner__sub-image position-absolute top-0 start-0" />
 
-        <nav class="banner__nav navbar navbar-expand-lg navbar-light bg-transparent py-xxl-3">
+        <nav class="banner__nav navbar navbar-expand-lg navbar-light bg-transparent">
           <div class="container">
-            <a class="navbar-brand m-0 p-0" href="#">
+            <a class="navbar-brand m-auto p-0" href="#">
               <img src="img/png/website-logo.png" alt="brand" class="banner__logo animate__animated animate__bounce" />
             </a>
 
-            <!-- Mobile Menu Section -->
-            <section
-              class="banner__mobile-menu mobile-menu position-fixed p-3 d-lg-none overflow-scroll d-flex flex-column justify-content-evenly"
-              id="mobile-menu">
-              <div class="banner__mobile-menu-head menu-head text-center">
-                <img src="img/png/website-logo.png" alt="mobile-menu-brand" />
-              </div>
-              <div
-                class="banner__mobile-menu-buttons d-flex justify-content-center align-items-center flex-column gap-3">
-                <button class="btn-grad text-white p-2 rounded-pill border-0">
-                  ورود به پنل
-                </button>
-                <button class="btn-grad text-white p-2 rounded-pill border-0">
-                  سبد خرید
-                </button>
-              </div>
-              <div class="banner__mobile-menu-search input-container position-relative w-100">
-                <img class="fa fa-globe position-absolute top-0" src="img/svg/global.svg" alt="global-icon" />
-                <input class="form-control w-100 px-5 rounded-pill" type="text" placeholder="جستجو دامنه...." />
-                <img class="fa fa-search position-absolute top-0" src="img/svg/search.svg" alt="search-icon" />
-              </div>
-              <div class="banner__mobile-menu-links mobile-menu-ul">
-                <h2 class="text-primary fs-4">منو دسترسی</h2>
-                <hr class="text-secondary" />
-                <ul class="list-unstyled p-0">
-                  <li class="banner__mobile-menu-item w-100 py-3 border-bottom">
-                    <a href="#header" class="d-flex justify-content-between align-items-center text-decoration-none">
-                      <span class="text-white">درباره ما</span>
-                      <img width="38" height="38" src="https://img.icons8.com/pulsar-gradient/48/long-arrow-left.png"
-                        alt="long-arrow-left" />
-                    </a>
-                  </li>
-                  <li class="banner__mobile-menu-item w-100 py-3 border-bottom">
-                    <a href="#domain" class="d-flex justify-content-between align-items-center text-decoration-none">
-                      <span class="text-white">دامنه</span>
-                      <img width="38" height="38" src="https://img.icons8.com/pulsar-gradient/48/long-arrow-left.png"
-                        alt="long-arrow-left" />
-                    </a>
-                  </li>
-                  <li class="banner__mobile-menu-item w-100 py-3 border-bottom">
-                    <a href="#plans" class="d-flex justify-content-between align-items-center text-decoration-none">
-                      <span class="text-white">هاست</span>
-                      <img width="38" height="38" src="https://img.icons8.com/pulsar-gradient/48/long-arrow-left.png"
-                        alt="long-arrow-left" />
-                    </a>
-                  </li>
-                  <li class="banner__mobile-menu-item w-100 py-3 border-bottom">
-                    <a href="#main-questions"
-                      class="d-flex justify-content-between align-items-center text-decoration-none">
-                      <span class="text-white">سوالات متداول</span>
-                      <img width="38" height="38" src="https://img.icons8.com/pulsar-gradient/48/long-arrow-left.png"
-                        alt="long-arrow-left" />
-                    </a>
-                  </li>
-                  <li class="banner__mobile-menu-item w-100 py-3">
-                    <a href="#footer" class="d-flex justify-content-between align-items-center text-decoration-none">
-                      <span class="text-white">ارتباط با ما</span>
-                      <img width="38" height="38" src="https://img.icons8.com/pulsar-gradient/48/long-arrow-left.png"
-                        alt="long-arrow-left" />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </section>
-
-            <button class="navbar-toggler" id="navbarToggler">
-              <img src="./img/png/hamburger-menu.png" width="58px" height="58px" alt="hamburger-menu" />
-            </button>
+            <ul
+              class="mobile-menu d-flex justify-content-around align-items-center bg-white position-fixed col-12 col-sm-9 m-auto d-lg-none">
+              <li><a href="#header"><i class="fa-solid fa-2xl fa-house"></i></a></li>
+              <li><a href="#domain"><i class="fa-solid fa-2xl fa-magnifying-glass"></i></a></li>
+              <li><a href="#plans"><i class="fa-solid fa-2xl fa-server"></i></a></li>
+              <li><a href="#header"><i class="fa-solid fa-2xl fa-circle-user"></i></a></li>
+              <li><a href="#header"><i class="fa-solid fa-2xl fa-cart-shopping"></i></a></li>
+            </ul>
 
             <div class="collapse navbar-collapse p-3">
               <ul class="banner__nav-list navbar-nav mx-auto m-0 p-0">
-                <li class="banner__nav-item nav-item ms-4 ms-lg-0 ms-xl-5 position-relative">
+                <li class="banner__nav-item nav-item ms-4 ms-lg-0 ms-xl-5 position-relative pb-2">
                   <a class="banner__nav-link nav-link text-white fs-6 fw-bolder" href="#services">
                     درباره ما
                   </a>
                 </li>
-                <li class="banner__nav-item nav-item ms-4 ms-lg-0 ms-xl-5 position-relative">
+                <li class="banner__nav-item nav-item ms-4 ms-lg-0 ms-xl-5 position-relative pb-2">
                   <a class="banner__nav-link nav-link text-white fs-6 fw-bolder" href="#domain">
                     دامنه
                   </a>
                 </li>
-                <li class="banner__nav-item nav-item ms-4 ms-lg-0 ms-xl-5 position-relative">
+                <li class="banner__nav-item nav-item ms-4 ms-lg-0 ms-xl-5 position-relative pb-2">
                   <a class="banner__nav-link nav-link text-white fs-6 fw-bolder" href="#plans">
                     هاست
                   </a>
                 </li>
-                <li class="banner__nav-item nav-item ms-4 ms-lg-0 ms-xl-5 position-relative">
+                <li class="banner__nav-item nav-item ms-4 ms-lg-0 ms-xl-5 position-relative pb-2">
                   <a class="banner__nav-link nav-link text-white fs-6 fw-bolder" href="#main-questions">
                     سوالات متداول
                   </a>
                 </li>
-                <li class="banner__nav-item nav-item ms-4 ms-lg-0 ms-xl-5 position-relative">
+                <li class="banner__nav-item nav-item ms-4 ms-lg-0 ms-xl-5 position-relative pb-2">
                   <a class="banner__nav-link nav-link text-white fs-6 fw-bolder" href="#footer">
                     ارتباط با ما
                   </a>
                 </li>
               </ul>
               <div class="banner__nav-buttons">
-                <button class="btn-grad text-white p-2 rounded-end border-0 mx-1 mx-lg-0">
-                  ورود به پنل کاربری
+                <button class="text-white rounded-circle border-0 mx-1 mx-lg-2 bg-transparent">
+                  <i class="fa-solid fa-2xl fa-circle-user"></i>
                 </button>
-                <button class="btn-grad text-white p-2 rounded-start border-0 mx-1 mx-lg-0">
-                  سبد خرید
+                <button class="text-white rounded-circle border-0 mx-1 mx-lg-2 bg-transparent">
+                  <i class="fa-solid fa-2xl fa-cart-shopping"></i>
                 </button>
               </div>
             </div>
           </div>
         </nav>
 
-        <div class="banner__intro p-5">
+        <div class="banner__intro mt-5">
           <div
             class="container d-flex justify-content-center align-items-center overflow-hidden flex-column flex-lg-row-reverse">
             <section
-              class="banner__intro-desc col-12 col-md-8 col-lg-7 text-center text-lg-end mb-4 mb-md-0 animate__animated animate__backInRight animate-slow lh-lg">
-              <h5 class="text-white mb-5">
-                بهترین ارائه دهنده خدمات دامنه و میزبانی هاست
+              class="banner__intro-desc col-12 col-md-8 col-lg-6 text-center text-lg-end mb-4 mb-md-0 animate__animated animate__backInRight animate-slow lh-lg">
+              <h5 class="text-white mb-4">
+                - بهترین ارائه دهنده خدمات دامنه و میزبانی هاست -
               </h5>
-              <h1 class="text-white display-1 mb-5">میزبانی وب قدرتمند</h1>
-              <p class="text-white mb-5 lh-lg">
+              <h1 class="text-white display-2 mb-4">میزبانی وب قدرتمند</h1>
+              <p class="text-white mb-4 lh-lg">
                 میزبانی وردپرس خود را با جزئیات فوق العاده شارژ کنید تجزیه و
                 تحلیل وب سایت ، ابزار بازاریابی ، امنیت و داده ها پشتیبان گیری
                 از همه در یک مکان.
@@ -153,8 +93,8 @@
             </section>
 
             <section
-              class="banner__intro-img col-12 col-md-8 col-lg-5 animate__animated animate__backInLeft animate-slow">
-              <img src="img/png/server-svg.png" alt="plans-background" class="w-100" />
+              class="banner__intro-img col-12 col-md-8 col-lg-6 animate__animated animate__backInLeft animate-slow">
+              <img src="img/png/server-svg.png" alt="plans-background" class="img-fluid" />
             </section>
           </div>
         </div>
@@ -165,85 +105,111 @@
     <section class="search" id="domain">
       <div class="container wow animate__animated animate__fadeInDown">
         <div class="search-title text-center">
-          <h1 class="fw-bold main-color mb-4">جست و جو دامنه جدید</h1>
+          <h2 class="main-title main-color mb-4 display-6">جست و جو دامنه</h2>
           <p class="text-secondary mb-4 w-100 mx-auto lh-lg">
-            میزبانی وردپرس خود را با تجزیه و تحلیل دقیق وب سایت ، ابزار
-            بازاریابی شارژ کنید.
+            نام دامنه ایده‌آل کسب‌وکارت رو همین حالا جستجو کن و اولین قدم رو برای حضور آنلاین حرفه‌ای بردار!
           </p>
         </div>
-        <div class="input-container position-relative mb-4 w-75 mx-auto">
-          <img class="fa fa-globe position-absolute top-0" src="img/svg/global.svg" />
-          <input class="form-control w-100 px-5 rounded-pill" type="text" placeholder="جستجو دامنه...." />
-          <img class="fa fa-search position-absolute top-0" src="img/svg/search.svg" />
+        <div class="input-container position-relative mb-5 w-75 mx-auto">
+          <i class="fa-solid fa-xl fa-globe position-absolute"></i>
+          <input class="form-control w-100 py-2 px-5 rounded-pill mx-auto" type="text"
+            placeholder="دنبال چه دامنه ای هستی؟" name="domain" />
+          <i class="fa-solid fa- fa-xl fa-magnifying-glass position-absolute"></i>
         </div>
-        <ul class="nav justify-content-center p-0">
-          <li class="mx-2">
-            <a class="disabled text-danger text-decoration-none">com : 755,000.</a>
-          </li>
-          <li class="mx-2">
-            <a class="disabled text-primary text-decoration-none">ir : 26,000.</a>
-          </li>
-          <li class="mx-2">
-            <a class="disabled text-info text-decoration-none">org : 400,000.</a>
-          </li>
-          <li class="mx-2">
-            <a class="disabled text-success text-decoration-none">net : 525,000.</a>
-          </li>
-        </ul>
+        <table class="table border table-striped text-center">
+          <thead class="table-primary">
+            <tr class="border">
+              <th>
+                نوع دامنه
+              </th>
+              <th>
+                قیمت
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border">
+              <td>
+                com
+              </td>
+              <td>
+                1,049,000 تومان
+              </td>
+            </tr>
+            <tr class="border">
+              <td>
+                net
+              </td>
+              <td>
+                1,189,000 تومان
+              </td>
+            </tr>
+            <tr class="border">
+              <td>
+                org
+              </td>
+              <td>
+                784,000 تومان
+              </td>
+            </tr>
+            <tr class="border">
+              <td>
+                ir
+              </td>
+              <td>
+                79,000 تومان
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
     <section class="services" id="services">
       <div class="container">
-        <h1 class="fw-bold text-center main-color wow animate__animated animate__flash">
+        <h2 class="main-title text-center main-color display-6 wow animate__animated animate__flash">
           سرویس های شگفت انگیز ما
-        </h1>
+        </h2>
         <div class="all-services row row-cols-1 row-cols-sm-2 row-cols-md-3 mt-5">
           <div class="service text-center my-3 wow animate__animated animate__zoomInRight">
             <img src="img/svg/our-service-1.svg" alt="service1" />
             <h4>مدیریت خودساخته</h4>
             <p class="w-75 m-auto text-secondary lh-lg">
-              میزبانی وردپرس خود را با تجزیه و تحلیل دقیق وب سایت ، ابزار
-              بازاریابی شارژ کنید.
+              کنترل کامل هاست و دامنه، قدرت مدیریت در دستان شما!
             </p>
           </div>
           <div class="service text-center my-3 wow animate__animated animate__zoomInDown">
             <img src="img/svg/our-service-2.svg" alt="service2" />
             <h4>تعهد در برابر امنیت</h4>
             <p class="w-75 m-auto text-secondary lh-lg">
-              میزبانی وردپرس خود را با تجزیه و تحلیل دقیق وب سایت ، ابزار
-              بازاریابی شارژ کنید.
+              امنیت تضمین‌شده، تعهدی که به آن پایبندیم!
             </p>
           </div>
           <div class="service text-center my-3 wow animate__animated animate__zoomInLeft">
             <img src="img/svg/our-service-3.svg" alt="service3" />
             <h4>حریم خصوصی</h4>
             <p class="w-75 m-auto text-secondary lh-lg">
-              میزبانی وردپرس خود را با تجزیه و تحلیل دقیق وب سایت ، ابزار
-              بازاریابی شارژ کنید.
+              حفظ حریم خصوصی شما، اولویت اصلی ماست!
             </p>
           </div>
           <div class="service text-center my-3 wow animate__animated animate__zoomInRight">
             <img src="img/svg/our-service-4.svg" alt="service4" />
             <h4>قابلیت شخصی سازی</h4>
             <p class="w-75 m-auto text-secondary lh-lg">
-              میزبانی وردپرس خود را با تجزیه و تحلیل دقیق وب سایت ، ابزار
-              بازاریابی شارژ کنید.
+              سرویسی انعطاف‌پذیر، متناسب با نیازهای کسب‌وکار شما!
             </p>
           </div>
           <div class="service text-center my-3 wow animate__animated animate__zoomInUp">
             <img src="img/svg/our-service-5.svg" alt="service5" />
             <h4>پشتیبانی 24/7</h4>
             <p class="w-75 m-auto text-secondary lh-lg">
-              میزبانی وردپرس خود را با تجزیه و تحلیل دقیق وب سایت ، ابزار
-              بازاریابی شارژ کنید.
+              پشتیبانی ۲۴/۷، همیشه در کنار شما!
             </p>
           </div>
           <div class="service text-center my-3 wow animate__animated animate__zoomInLeft">
             <img src="img/svg/our-service-6.svg" alt="service6" />
             <h4>گارنتی یک ساله</h4>
             <p class="w-75 m-auto text-secondary lh-lg">
-              میزبانی وردپرس خود را با تجزیه و تحلیل دقیق وب سایت ، ابزار
-              بازاریابی شارژ کنید.
+              گارانتی یک‌ساله، اطمینان از کیفیت و پایداری!
             </p>
           </div>
         </div>
@@ -252,7 +218,7 @@
     <section class="plans overflow-hidden" id="plans">
       <div class="container">
         <div class="plan-main-title text-center wow animate__animated animate__flash">
-          <h1 class="fw-bold text-white">پلن مورد نظر خودتو انتخاب کن</h1>
+          <h2 class="main-title text-white display-6">پلن مورد نظر خودتو انتخاب کن</h2>
           <p class="text-white my-2 lh-lg">
             میزبانی وردپرس خود را با تجزیه و تحلیل دقیق وب سایت ، ابزار
             بازاریابی شارژ کنید.
@@ -260,38 +226,36 @@
         </div>
         <div class="cards row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center mt-5">
           <div class="plan text-center mb-3 mb-lg-0 wow animate__animated animate__bounceInUp">
-            <div class="plan-head">
-              <div class="plan-type plan-1 d-inline-block px-3 py-2">
+            <div class="plan-main bg-light p-4 position-relative rounded-3">
+              <div class="plan-type plan-1 px-3 py-3 position-absolute">
                 <h4 class="m-0 text-white">سرویس طلایی</h4>
               </div>
-            </div>
-            <div class="plan-main bg-light p-4 rounded-3">
               <div
                 class="plan-icon main-bg-color rounded-circle d-flex justify-content-center align-items-center m-auto">
-                <img class="fas fa-server text-white fs-1" src="img/svg/host-service-icon.svg" />
+                <i class="fa-solid fa-server text-white fa-2xl"></i>
               </div>
               <div class="price my-3">
                 <span class="main-color fs-1">35000 تومان</span>/ ماهانه
               </div>
-              <ul class="plan-ul d-grid justify-content-center align-content-end p-0 mb-4">
+              <ul class="plan-ul d-grid justify-content-center align-content-center p-0 mb-4">
                 <li class="d-flex justify-content-center align-items-center my-2">
-                  <img src="img/svg/check-svg.svg" alt="" class="ms-2" />1
+                  <i class="fa-solid fa-square-check ms-2" style="color: green;"></i>1
                   ترابایت فضا
                 </li>
                 <li class="d-flex justify-content-center align-items-center my-2">
-                  <img src="img/svg/check-svg.svg" alt="" class="ms-2" />پهنای
+                  <i class="fa-solid fa-square-check ms-2" style="color: green;"></i>پهنای
                   باند نامحدود
                 </li>
                 <li class="d-flex justify-content-center align-items-center my-2">
-                  <img src="img/svg/check-svg.svg" alt="" class="ms-2" />سیستم
+                  <i class="fa-solid fa-square-check ms-2" style="color: green;"></i>سیستم
                   پشتیبان گیری هفتگی
                 </li>
                 <li class="d-flex justify-content-center align-items-center my-2">
-                  <img src="img/svg/check-svg.svg" alt="" class="ms-2" />2
+                  <i class="fa-solid fa-square-check ms-2" style="color: green;"></i>2
                   دامنه رایگان
                 </li>
                 <li class="d-flex justify-content-center align-items-center my-2">
-                  <img src="img/svg/check-svg.svg" alt="" class="ms-2" />دیتابیس نامحدود
+                  <i class="fa-solid fa-square-check ms-2" style="color: green;"></i>دیتابیس نامحدود
                 </li>
               </ul>
               <button class="btn-grad text-white p-2 rounded-pill border-0">
@@ -300,38 +264,36 @@
             </div>
           </div>
           <div class="plan text-center mb-3 mb-lg-0 wow animate__animated animate__bounceInUp" data-wow-delay="1s">
-            <div class="plan-head">
-              <div class="plan-type plan-2 d-inline-block px-3 py-2">
+            <div class="plan-main bg-light p-4 rounded-3 position-relative">
+              <div class="plan-type plan-2 px-3 py-3 position-absolute">
                 <h4 class="m-0 text-white">سرویس نقره ای</h4>
               </div>
-            </div>
-            <div class="plan-main bg-light p-4 rounded-3">
               <div
                 class="plan-icon main-bg-color rounded-circle d-flex justify-content-center align-items-center m-auto">
-                <img class="fas fa-server text-white fs-1" src="img/svg/host-service-icon.svg" />
+                <i class="fa-solid fa-server text-white fa-2xl"></i>
               </div>
               <div class="price my-3">
                 <span class="main-color fs-1">25000 تومان</span>/ ماهانه
               </div>
-              <ul class="plan-ul d-grid justify-content-center p-0 mb-4">
+              <ul class="plan-ul d-grid justify-content-center align-content-center p-0 mb-4">
                 <li class="d-flex justify-content-center align-items-center my-2">
-                  <img src="img/svg/check-svg.svg" alt="" class="ms-2" />1
+                  <i class="fa-solid fa-square-check ms-2" style="color: green;"></i>1
                   ترابایت فضا
                 </li>
                 <li class="d-flex justify-content-center align-items-center my-2">
-                  <img src="img/svg/check-svg.svg" alt="" class="ms-2" />پهنای
+                  <i class="fa-solid fa-square-check ms-2" style="color: green;"></i>پهنای
                   باند نامحدود
                 </li>
                 <li class="d-flex justify-content-center align-items-center my-2">
-                  <img src="img/svg/check-svg.svg" alt="" class="ms-2" />سیستم
+                  <i class="fa-solid fa-square-check ms-2" style="color: green;"></i>سیستم
                   پشتیبان گیری هفتگی
                 </li>
                 <li class="d-flex justify-content-center align-items-center my-2">
-                  <img src="img/svg/check-svg.svg" alt="" class="ms-2" />2
+                  <i class="fa-solid fa-square-check ms-2" style="color: green;"></i>2
                   دامنه رایگان
                 </li>
                 <li class="d-flex justify-content-center align-items-center my-2">
-                  <img src="img/svg/check-svg.svg" alt="" class="ms-2" />دیتابیس نامحدود
+                  <i class="fa-solid fa-square-check ms-2" style="color: green;"></i>دیتابیس نامحدود
                 </li>
               </ul>
               <button class="btn-grad text-white p-2 rounded-pill border-0">
@@ -340,38 +302,36 @@
             </div>
           </div>
           <div class="plan text-center mb-3 mb-lg-0 wow animate__animated animate__bounceInUp" data-wow-delay="2s">
-            <div class="plan-head">
-              <div class="plan-type plan-3 d-inline-block px-3 py-2">
+            <div class="plan-main bg-light p-4 rounded-3 position-relative">
+              <div class="plan-type plan-3 px-3 py-3 position-absolute">
                 <h4 class="m-0 text-white">سرویس برنزی</h4>
               </div>
-            </div>
-            <div class="plan-main bg-light p-4 rounded-3">
               <div
                 class="plan-icon main-bg-color rounded-circle d-flex justify-content-center align-items-center m-auto">
-                <img class="fas fa-server text-white fs-1" src="img/svg/host-service-icon.svg" />
+                <i class="fa-solid fa-server text-white fa-2xl"></i>
               </div>
               <div class="price my-3">
                 <span class="main-color fs-1">15000 تومان</span>/ ماهانه
               </div>
-              <ul class="plan-ul d-grid justify-content-center p-0 mb-4">
+              <ul class="plan-ul d-grid justify-content-center align-content-center p-0 mb-4">
                 <li class="d-flex justify-content-center align-items-center my-2">
-                  <img src="img/svg/check-svg.svg" alt="" class="ms-2" />1
+                  <i class="fa-solid fa-square-check ms-2" style="color: green;"></i>1
                   ترابایت فضا
                 </li>
                 <li class="d-flex justify-content-center align-items-center my-2">
-                  <img src="img/svg/check-svg.svg" alt="" class="ms-2" />پهنای
+                  <i class="fa-solid fa-square-check ms-2" style="color: green;"></i>پهنای
                   باند نامحدود
                 </li>
                 <li class="d-flex justify-content-center align-items-center my-2">
-                  <img src="img/svg/check-svg.svg" alt="" class="ms-2" />سیستم
+                  <i class="fa-solid fa-square-check ms-2" style="color: green;"></i>سیستم
                   پشتیبان گیری هفتگی
                 </li>
                 <li class="d-flex justify-content-center align-items-center my-2">
-                  <img src="img/svg/check-svg.svg" alt="" class="ms-2" />2
+                  <i class="fa-solid fa-square-check ms-2" style="color: green;"></i>2
                   دامنه رایگان
                 </li>
                 <li class="d-flex justify-content-center align-items-center my-2">
-                  <img src="img/svg/check-svg.svg" alt="" class="ms-2" />دیتابیس نامحدود
+                  <i class="fa-solid fa-square-check ms-2" style="color: green;"></i>دیتابیس نامحدود
                 </li>
               </ul>
               <button class="btn-grad text-white p-2 rounded-pill border-0">
@@ -397,19 +357,19 @@
             </p>
             <ul class="list-unstyled p-0 lh-lg m-0">
               <li class="my-2">
-                <img src="img/svg/check-svg.svg" alt="favicon" />
+                <i class="fa-solid fa-circle-check" style="color: green;"></i>
                 <p class="m-0 d-inline-block">
                   میزبانی وردپرس با وب سایت مفصل
                 </p>
               </li>
               <li class="my-2">
-                <img src="img/svg/check-svg.svg" alt="favicon" />
+                <i class="fa-solid fa-circle-check" style="color: green;"></i>
                 <p class="m-0 d-inline-block">
                   کارشناسان ما فقط بخشی از این دلیل هستند
                 </p>
               </li>
               <li class="my-2">
-                <img src="img/svg/check-svg.svg" alt="favicon" />
+                <i class="fa-solid fa-circle-check" style="color: green;"></i>
                 <p class="m-0 d-inline-block">تجزیه و تحلیل دقیق وب سایت</p>
               </li>
             </ul>
@@ -428,13 +388,13 @@
             </p>
             <ul class="list-unstyled p-0 lh-lg m-0">
               <li class="my-2">
-                <img src="img/svg/check-svg.svg" alt="favicon" />
+                <i class="fa-solid fa-circle-check" style="color: green;"></i>
                 <p class="m-0 d-inline-block">
                   میزبانی وردپرس با وب سایت مفصل
                 </p>
               </li>
               <li class="my-2">
-                <img src="img/svg/check-svg.svg" alt="favicon" />
+                <i class="fa-solid fa-circle-check" style="color: green;"></i>
                 <p class="m-0 d-inline-block">
                   کارشناسان ما فقط بخشی از این دلیل هستند
                 </p>
@@ -450,9 +410,9 @@
     <section class="main-question" id="main-questions">
       <div class="container">
         <div class="main-question-head text-center">
-          <h1 class="fw-bold main-color">سوالات متداول کاربران</h1>
+          <h2 class="main-title main-color display-6">سوالات متداول کاربران</h2>
         </div>
-        <div class="accordian-container col-12 col-md-11 col-lg-10 mx-md-auto mt-5">
+        <!-- <div class="accordian-container col-12 col-md-11 col-lg-10 mx-md-auto mt-5">
           <div class="accordian-panel">
             <button class="accordion text-white p-4 w-100 border-0 text-end fs-6 my-2 pe-auto">
               چگونه در سایت ثبت نام کنم؟
@@ -492,17 +452,83 @@
               </p>
             </div>
           </div>
+        </div> -->
+        <div class="accordion mt-5 col-12 col-md-11 col-lg-10 mx-md-auto" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button text-white p-4 w-100 border-0 text-end" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                aria-controls="collapseOne">
+                سوال ۱: چگونه می‌توانم حساب کاربری خود را ایجاد کنم؟
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#faqAccordion">
+              <div class="accordion-body lh-lg">
+                برای ایجاد حساب کاربری کافیست به صفحه ثبت‌نام مراجعه کنید و اطلاعات لازم را وارد کنید. پس از ثبت‌نام،
+                ایمیلی برای تایید حساب به شما ارسال خواهد شد.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button text-white p-4 w-100 border-0 text-end collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                aria-controls="collapseTwo">
+                سوال ۲: چگونه می‌توانم هاست خریداری کنم؟
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#faqAccordion">
+              <div class="accordion-body lh-lg">
+                برای خرید هاست ابتدا وارد حساب کاربری خود شوید و سپس در بخش "خرید هاست" پلان مورد نظر خود را انتخاب کنید
+                و مراحل پرداخت را انجام دهید.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button text-white p-4 w-100 border-0 text-end collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                aria-controls="collapseThree">
+                سوال ۳: چگونه می‌توانم دامنه خود را به هاست منتقل کنم؟
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#faqAccordion">
+              <div class="accordion-body lh-lg">
+                برای انتقال دامنه به هاست شما باید DNS دامنه خود را به سرورهای ما تغییر دهید. دستورالعمل دقیق انتقال
+                دامنه در بخش راهنمای سایت موجود است.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button text-white p-4 w-100 border-0 text-end collapsed position-relative"
+                type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                aria-controls="collapseFour">
+                سوال ۴: پشتیبانی فنی چگونه قابل دسترسی است؟
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+              data-bs-parent="#faqAccordion">
+              <div class="accordion-body lh-lg">
+                برای دسترسی به پشتیبانی فنی، می‌توانید از طریق سیستم تیکتینگ سایت یا تماس تلفنی با تیم پشتیبانی ما
+                ارتباط برقرار کنید.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   </main>
-  <footer id="footer">
+  <footer id="footer" class="gradient-background">
     <div class="container">
       <section class="footer__upper row align-items-center justify-content-between mb-lg-4 mx-auto">
         <div
           class="footer__contact d-flex align-items-center align-items-lg-start justify-content-center flex-column col-12 col-lg-6 mb-4 mb-lg-0">
           <div class="footer__subscribe input-group">
-            <input type="text" class="form-control rounded" placeholder="ایمیل شما :)" />
+            <input type="text" class="form-control rounded" placeholder="ایمیل شما :)" name="email" autocomplete="on" />
             <button class="footer__subscribe__btn text-white rounded me-1" type="button">
               عضویت
             </button>
@@ -616,7 +642,6 @@
   <script>
     new WOW().init();
   </script>
-  <script src="js/script.js"></script>
 </body>
 
 </html>
