@@ -1,6 +1,3 @@
-@import url(reset.css);
-@import url(responsive.css);
-
 /******** base codes *******/
 
 @font-face {
@@ -11,14 +8,20 @@
     url("../fonts/IRANSansWeb(FaNum)_Medium.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: 'iranyekan';
+  src: url('/fonts/IRANYekanXFaNum-Regular.woff2') format('woff2'),
+    url('/fonts/IRANYekanXFaNum-Bold.woff2') format('woff2');
+  font-style: normal;
+  font-display: swap;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "IRANSansWeb", serif;
-  box-sizing: border-box;
-  direction: rtl;
+  font-family: "iranyekan";
   text-align: right;
 }
 
@@ -103,15 +106,8 @@ body {
   padding: 100px 0;
 }
 
-.fa-globe {
-  right: 15px;
-  top: 20px;
-}
-
-.fa-magnifying-glass {
-  left: 15px;
-  bottom: 20px;
-  cursor: pointer;
+.input-container i {
+  transform: translate(50%, 40%);
 }
 
 /*****services*****/
@@ -131,7 +127,7 @@ body {
 .plans {
   padding: 100px 0;
   background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(6, 39, 131, 0.8)),
-    url("../img/png/plans-background.jpg");
+    url("src/assets/png/plans-background.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -179,6 +175,10 @@ body {
   padding: 100px 0;
 }
 
+.accordion-body {
+  text-align: justify;
+}
+
 .accordion-button {
   background-color: rgb(21, 165, 231);
 }
@@ -191,7 +191,7 @@ body {
 /*****footer*****/
 
 footer {
-  padding: 60px 30px;
+  padding: 100px 30px 100px 30px;
   position: relative;
 }
 
@@ -206,14 +206,20 @@ footer:before {
   left: calc((100% - 50px)/2);
 }
 
-.footer__subscribe__btn {
-  background-color: transparent;
-  border: 1px solid #fff;
-  transition: all 0.3s ease-in-out;
+.footer__contact__btn {
+  transition: 0.3s ease-in-out;
+  height: 40px;
 }
 
-.footer__subscribe__btn:hover {
+.footer__contact__btn:hover {
   background-color: #0013e1;
+}
+
+.footer__detail p {
+  text-align: justify
+}
+.bi-telegram::before,.bi-instagram::before,.bi-whatsapp::before{
+  font-size: 30px;
 }
 
 .logo {
@@ -241,4 +247,33 @@ footer:before {
 .mobile-menu li a i:hover {
   transform: scale(1.2);
   color: #090088;
+}
+
+/*****responsive*****/
+@media only screen and (min-width: 568px) {
+  .plan {}
+
+  .footer__upper {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .input-group {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  header {
+    height: 100vh;
+  }
+
+  .input-group {
+    width: 75%;
+  }
+
+  .input-container {
+    width: 50% !important;
+  }
 }
