@@ -1,4 +1,8 @@
-export default {
+import { defineConfig } from 'vite'
+
+export default defineConfig({
+    base: '/Eco-Hosting/',
+
     css: {
         preprocessorOptions: {
             scss: {
@@ -11,4 +15,4 @@ export default {
             },
         },
     },
-}
+})
