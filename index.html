@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <header id="header" class="gradient-background py-3 position-relative">
+  <header id="header" class="gradient-background py-5 position-relative vh-100">
     <div class="container">
       <section class="banner">
         <img src="src/assets/png/top-left-shape.webp" alt="top-left-img"
@@ -22,26 +22,30 @@
             </a>
 
             <ul
-              class="mobile-menu bottom-0 start-50 list-unstyled px-3 d-flex justify-content-between align-items-center bg-white position-fixed col-12 col-sm-9 m-auto d-lg-none">
-              <li class="d-flex justify-content-center align-items-center flex-column"><a href="#domain"><i
+              class="mobile-menu bottom-0 start-50 list-unstyled px-4 py-2 d-flex justify-content-between align-items-center bg-white position-fixed col-12 col-sm-9 m-auto d-lg-none">
+              <li><a href="#domain"
+                  class="d-flex justify-content-center align-items-center flex-column text-decoration-none text-black"><i
                     class="bi bi-search fs-3"></i>
+                  <p class="fs-6 m-0 p-0">دامنه</p>
                 </a>
-                <p class="fs-6 m-0 p-0">دامنه</p>
               </li>
-              <li class="d-flex justify-content-center align-items-center flex-column"><a href="#plans"><i
+              <li><a href="#plans"
+                  class="d-flex justify-content-center align-items-center flex-column text-decoration-none text-black"><i
                     class="bi bi-database fs-3"></i>
+                  <p class="fs-6 m-0 p-0">هاست</p>
                 </a>
-                <p class="fs-6 m-0 p-0">هاست</p>
               </li>
-              <li class="d-flex justify-content-center align-items-center flex-column"><a href="#header"><i
+              <li><a href="#"
+                  class="d-flex justify-content-center align-items-center flex-column text-decoration-none text-black"><i
                     class="bi bi-person-circle fs-3"></i>
+                  <p class="fs-6 m-0 p-0">حساب کاربری</p>
                 </a>
-                <p class="fs-6 m-0 p-0">حساب کاربری</p>
               </li>
-              <li class="d-flex justify-content-center align-items-center flex-column"><a href="#header"><i
+              <li><a href="#"
+                  class="d-flex justify-content-center align-items-center flex-column text-decoration-none text-black"><i
                     class="bi bi-cart fs-3"></i>
+                  <p class="fs-6 m-0 p-0">سبد خرید</p>
                 </a>
-                <p class="fs-6 m-0 p-0">سبد خرید</p>
               </li>
             </ul>
 
@@ -74,10 +78,10 @@
                 </li>
               </ul>
               <div class="banner__nav__buttons">
-                <button class="text-white rounded-circle border-0 mx-1 mx-lg-2 bg-transparent">
+                <button class="text-white rounded-circle border-0 mx-1 mx-lg-2 bg-transparent" title="user-btn">
                   <i class="bi bi-person-circle fs-3"></i>
                 </button>
-                <button class="text-white rounded-circle border-0 mx-1 mx-lg-2 bg-transparent">
+                <button class="text-white rounded-circle border-0 mx-1 mx-lg-2 bg-transparent" title="cart-btn">
                   <i class="bi bi-cart fs-3"></i>
                 </button>
               </div>
@@ -85,10 +89,11 @@
           </div>
         </nav>
 
-        <div class="banner__intro mt-5">
+        <div class="banner__intro my-3">
           <div class="container d-flex justify-content-center align-items-center flex-column flex-lg-row-reverse">
-            <section class="banner__intro__img col-12 col-md-8 col-lg-6">
-              <img src="src/assets/png/server-svg.webp" alt="plans-background" class="img-fluid" loading="lazy" />
+            <section class="banner__intro__img col-12 col-md-8 col-lg-6 mb-3">
+              <img src="src/assets/png/server-svg.webp" alt="plans-background" class="img-fluid server__img"
+                loading="lazy" />
             </section>
             <section class="banner__intro__desc col-12 col-md-8 col-lg-6 text-center text-lg-end mb-4 mb-md-0 lh-lg">
               <h5 class="text-white mb-4 fw-lighter">
@@ -238,9 +243,9 @@
           </p>
         </div>
         <div class="cards row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center mt-5">
-          <div class="plan text-center mb-3 mb-lg-0">
+          <div class="plan text-center mb-5 mb-lg-0">
             <div class="plan__main bg-light rounded-3 position-relative">
-              <div class="plan__type top-0 start-0 plan-3 px-2 py-2 position-absolute w-100">
+              <div class="plan__type top-0 start-0 plan-3 px-2 py-3 position-absolute w-100">
                 <h4 class="m-0 text-white">سرویس برنزی</h4>
               </div>
               <div
@@ -277,9 +282,9 @@
               </button>
             </div>
           </div>
-          <div class="plan text-center mb-3 mb-lg-0">
+          <div class="plan text-center mb-5 mb-lg-0">
             <div class="plan__main bg-light rounded-3 position-relative">
-              <div class="plan__type top-0 start-0 plan-2 px-2 py-2 position-absolute w-100">
+              <div class="plan__type top-0 start-0 plan-2 px-2 py-3 position-absolute w-100">
                 <h4 class="m-0 text-white">سرویس نقره ای</h4>
               </div>
               <div
@@ -316,9 +321,9 @@
               </button>
             </div>
           </div>
-          <div class="plan text-center mb-3 mb-lg-0">
+          <div class="plan text-center mb-5 mb-lg-0">
             <div class="plan__main bg-light position-relative rounded-3">
-              <div class="plan__type top-0 start-0 plan-1 px-2 py-2 position-absolute w-100">
+              <div class="plan__type top-0 start-0 plan-1 px-2 py-3 position-absolute w-100">
                 <h4 class="m-0 text-white">سرویس طلایی</h4>
               </div>
               <div
@@ -414,7 +419,7 @@
                 </p>
               </li>
             </ul>
-            <button class="btn-grad text-white py-2 px-4 rounded-pill border-0">
+            <button class="btn-grad text-white py-2 px-4 rounded-pill border-0 mt-3">
               مشاوره با کارشناسان
             </button>
           </div>
@@ -429,7 +434,7 @@
         <div class="accordion mt-5 col-12 col-md-11 col-lg-10 mx-md-auto" id="faqAccordion">
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button text-white py-4 px-5 w-100 border-0 text-end" type="button"
+              <button class="accordion-button text-white py-4 px-5 w-100 border-0 text-start" type="button"
                 data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
                 aria-controls="collapseOne">
                 چگونه می‌توانم حساب کاربری خود را ایجاد کنم؟
@@ -445,7 +450,7 @@
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button text-white py-4 px-5 w-100 border-0 text-end collapsed" type="button"
+              <button class="accordion-button text-white py-4 px-5 w-100 border-0 text-start collapsed" type="button"
                 data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
                 aria-controls="collapseTwo">
                 چگونه می‌توانم هاست خریداری کنم؟
@@ -461,7 +466,7 @@
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button text-white py-4 px-5 w-100 border-0 text-end collapsed" type="button"
+              <button class="accordion-button text-white py-4 px-5 w-100 border-0 text-start collapsed" type="button"
                 data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
                 aria-controls="collapseThree">
                 چگونه می‌توانم دامنه خود را به هاست منتقل کنم؟
@@ -477,7 +482,8 @@
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingFour">
-              <button class="accordion-button text-white py-4 px-5 w-100 border-0 text-end collapsed position-relative"
+              <button
+                class="accordion-button text-white py-4 px-5 w-100 border-0 text-start collapsed position-relative"
                 type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
                 aria-controls="collapseFour">
                 پشتیبانی فنی چگونه قابل دسترسی است؟
@@ -500,23 +506,20 @@
       <section class="footer__upper row align-items-center justify-content-between mb-lg-4 mx-auto">
         <div
           class="footer__contact d-flex justify-content-center align-items-center align-items-lg-start flex-column col-12 col-lg-6 mb-4 mb-lg-0">
-          <input type="text" class="form-control rounded-2 mb-2" placeholder="ایمیل شما" name="email"
-            autocomplete="on" />
+          <input type="email" class="form-control rounded-2 mb-2" placeholder="ایمیل شما" name="email"
+            autocomplete="email" />
           <button class="footer__contact__btn text-white rounded-2 w-100 bg-success border-0" type="button">
             عضویت
           </button>
         </div>
-        <div class="footer__social d-flex align-items-center col-12 col-lg-4  justify-content-between">
-          <div
-            class="footer__social__logo pe-auto bg-white rounded-circle d-flex justify-content-center align-items-center">
+        <div class="footer__social py-3 d-flex align-items-center col-12 col-lg-4  justify-content-between">
+          <div class="footer__social__logo bg-white rounded-circle d-flex justify-content-center align-items-center">
             <i class="bi bi-telegram" style="color: rgb(10, 172, 204)"></i>
           </div>
-          <div
-            class="footer__social__logo pe-auto bg-white rounded-circle d-flex justify-content-center align-items-center">
+          <div class="footer__social__logo bg-white rounded-circle d-flex justify-content-center align-items-center">
             <i class="bi bi-instagram" style="color: rgb(10, 172, 204)"></i>
           </div>
-          <div
-            class="footer__social__logo pe-auto bg-white rounded-circle d-flex justify-content-center align-items-center">
+          <div class="footer__social__logo bg-white rounded-circle d-flex justify-content-center align-items-center">
             <i class="bi bi-whatsapp" style="color: rgb(10, 172, 204)"></i>
           </div>
         </div>
@@ -531,8 +534,7 @@
               می‌کند. ما با بهره‌گیری از تکنولوژی‌های روز دنیا و تیم پشتیبانی مجرب، خدماتی جامع شامل میزبانی اشتراکی،
               سرورهای اختصاصی و راهکارهای ابری را با بالاترین استانداردهای کیفیت ارائه می‌دهیم.</p>
           </div>
-          <div
-            class="footer__links col-12 col-lg-5 row-cols-2 row-cols-sm-3 row-cols-lg-4 row justify-content-center align-items-center">
+          <div class="footer__links col-12 col-lg-4 row-cols-3 row justify-content-center align-items-center m-auto">
             <div class="footer__links-column text-center lh-lg">
               <h4 class="text-white">شرکت</h4>
               <ul class="list-unstyled p-0 m-0">
@@ -594,7 +596,7 @@
               </ul>
             </div>
           </div>
-          <div class="footer__img col-12 col-lg-1 text-center mt-5 mt-lg-0 img-fluid">
+          <div class="footer__img col-12 col-lg-3 text-center mt-5 mt-lg-0 img-fluid">
             <img src="src/assets/png/enamad.webp" alt="enamad" loading="lazy">
           </div>
         </div>

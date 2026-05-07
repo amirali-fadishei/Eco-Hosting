@@ -68,6 +68,9 @@ body {
 }
 
 /*****header*****/
+header {
+  min-height: fit-content;
+}
 
 .nav-link {
   text-shadow: 3px 2px 3px rgba(255, 255, 255, .2);
@@ -95,10 +98,30 @@ body {
   transition: all 0.4s ease-in-out;
 }
 
+.server__img {
+  display: block;
+  animation: float 3s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 /*****search*****/
 
 .search {
-  padding: 100px 0;
+  padding: 100px 20px;
 }
 
 .input-container__icon {
@@ -108,14 +131,14 @@ body {
 /*****services*****/
 
 .services {
-  padding: 100px 0;
+  padding: 100px 20px;
   background-color: rgb(235, 244, 255);
 }
 
 /*****plans*****/
 
 .plans {
-  padding: 100px 0;
+  padding: 100px 20px;
   background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(6, 39, 131, 0.8)),
     url("src/assets/png/plans-background.webp");
   background-position: center;
@@ -147,24 +170,27 @@ body {
 }
 
 .plan__type {
-  border-radius: 8px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .plan__main {
   box-shadow: -5px 5px 34px -3px rgba(0, 0, 0, 0.75);
-  padding: 70px 0 40px 0;
+  padding: 80px 0 40px 0;
 }
 
 /*****info*****/
 
 .info {
-  padding: 100px 0;
+  padding: 100px 20px;
 }
 
 /*****questions*****/
 
 .main-question {
-  padding: 100px 0;
+  padding: 100px 20px;
 }
 
 .accordion-body {
@@ -183,7 +209,7 @@ body {
 /*****footer*****/
 
 footer {
-  padding: 100px 30px 100px 30px;
+  padding: 100px 20px 100px 20px;
 }
 
 footer:before {
@@ -206,17 +232,47 @@ footer:before {
   text-align: justify
 }
 
+.footer__social__logo {
+  cursor: pointer;
+  animation: gentlePulse 3s ease-in-out infinite;
+}
+
+.footer__social__logo:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.footer__social__logo:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.footer__social__logo:nth-child(3) {
+  animation-delay: 1.2s;
+}
+
+@keyframes gentlePulse {
+  0% {
+    transform: scale(1);
+  }
+
+  12.5% {
+    transform: scale(1.2);
+  }
+
+  25% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 .bi-telegram::before,
 .bi-instagram::before,
 .bi-whatsapp::before {
   font-size: 30px;
+  padding: 20px;
 }
-
-.footer__social__logo {
-  width: 50px;
-  height: 50px;
-}
-
 
 /*****mobile-menu*****/
 .mobile-menu {
@@ -243,19 +299,10 @@ footer:before {
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .input-group {
-    width: 75%;
-  }
-}
-
 @media only screen and (min-width: 992px) {
-  header {
-    height: 100vh;
-  }
-
-  .input-group {
-    width: 75%;
+  table {
+    width: 60% !important;
+    margin: auto;
   }
 
   .input-container {
